@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+	  "allowJs": true,
+	  "checkJs": false,
+	  "lib": ["es6"],
+	  "target": "es5",
+	  "outDir": "Out",
+	  "noImplicitAny": false,
+	  "newLine": "crlf",
+	  "skipLibCheck": true,
+	  "module": "ES6",
+	  "strict": true,
+	  "baseUrl": ".",
+	  "moduleResolution": "node",
+	  "removeComments": false,
+	  "typeRoots": ["./node_modules/@esker-sdk"],
+	  "types": ["types-system/typings", "types-packages/typings", "types-ps"]
+   },
+
+   "exclude": ["Lib",
+	  "Out",
+	  "typings",
+		  "bin",
+		  "obj",
+	  "Processes",
+	  "node_modules",
+	  "**/*.test.*",
+	  "rollup.config.js"
+	]
+  }

@@ -1,0 +1,26 @@
+{
+	"scripts": {
+		"prepare": "pwsh -Command npm install --no-package-lock (Get-ChildItem -Path componentsAssets)",
+		"pretranspile": "npm run prepare",
+		"transpile": "pwsh -executionpolicy bypass -File ./node_modules/@esker-sdk/build-tools/scripts/transpile.ps1"
+	},
+	"type": "module",
+	"browser": "",
+	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^15.1.0",
+		"@rollup/plugin-typescript": "^11.1.1",
+		"@typescript-eslint/eslint-plugin": "^5.59.8",
+		"@typescript-eslint/parser": "^5.59.8",
+		"eslint": "^8.42.0",
+		"rollup": "=3.22.0",
+		"typescript": "^4.9.5"
+	},
+	"dependencies": {
+		"@esker-sdk/build-tools": "file:componentsAssets/esker-sdk-build-tools-2.6.6.tgz",
+		"@esker-sdk/component-ps-libraries": "file:componentsAssets/esker-sdk-component-ps-libraries-2.6.2.tgz",
+		"@esker-sdk/tslib": "file:componentsAssets/esker-sdk-tslib-2.5.2.tgz",
+		"@esker-sdk/types-packages": "file:componentsAssets/esker-sdk-types-packages-5.280.0.tgz",
+		"@esker-sdk/types-ps": "file:componentsAssets/@esker-sdk-types-ps-main.tgz",
+		"@esker-sdk/types-system": "file:componentsAssets/esker-sdk-types-system-5.280.0.tgz"
+	}
+}

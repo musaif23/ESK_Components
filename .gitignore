@@ -1,0 +1,22 @@
+#Global
+Processes/*/process.xml
+Processes/*/*BUILTIN.xml
+Logos/*
+*.zip
+*.esk
+scriptIncludes*.xml
+*.rlc
+updates.log
+ocr-cache.xmz
+
+#VSCode
+\.project
+
+#Esker for VSCode extension
+.tmp
+bin
+
+# Node artifact files
+node_modules/
+Out
+.eskerbuild.log

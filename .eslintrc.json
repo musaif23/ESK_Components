@@ -1,0 +1,72 @@
+{
+    //"extends": "eslint:recommended",
+
+    "rules": {
+
+		"no-unused-vars": ["error", { "args": "none" }],
+        "no-undef":"error",
+        "curly": "error",
+        "semi": ["error", "always"]
+    },
+	"overrides":[{
+		"files": ["**/*.ts"],
+		"parser": "@typescript-eslint/parser",
+		"plugins": [
+			"@typescript-eslint"
+		],
+		"extends": [
+			"eslint:recommended",
+			"plugin:@typescript-eslint/eslint-recommended",
+			"plugin:@typescript-eslint/recommended"
+		],
+		"rules": {
+		  "no-undef": "off",
+		  "no-empty-function": "off",
+		  "@typescript-eslint/no-empty-function": "off",
+		  "no-unused-vars": "off",
+		  "@typescript-eslint/no-unused-vars":  ["error", { "args": "none" }],
+		  "@typescript-eslint/triple-slash-reference" : "off",
+		  "@typescript-eslint/no-namespace": "off"
+		}
+	}],
+	"globals": {
+		"Attach": true,
+		"Controls": true,
+		"Data": true,
+		"Document": true,
+		"JSON": true,
+		"Language": true,
+		"Log": true,
+		"Popup": true,
+		"Process": true,
+		"ProcessInstance": true,
+		"Query": true,
+		"TemporaryFile": true,
+		"User": true,
+		"Users": false,
+		"Variable": true,
+		"Conversation": true,
+		"Lib": true,
+		"Helpers": true,
+		"Sys": true,
+		"Transaction": true,
+		"Handlebars": true,
+		"Crypto": true,
+		"ERPPurchaseOrder": false,
+		"ERPInvoice": false,
+		"ERPGoodReceipt": false,
+		"ERPCSVDataImportParameters": false,
+		"ERPInvoicePayment": false,
+		"ERPInvoiceExporter": false,
+		"GenericERPInvoiceClient": false,
+		"GenericERPInvoiceServer": false,
+		"GenericERPCSVDataImportParameters": false,
+		"GenericERPManager": false,
+		"GenericERPInvoice": false,
+		"SAPERPInvoice": false,
+		"EBSERPManager": false,
+		"NAVERPManager": false,
+		"JDEERPManager": false,
+		"SAPManager": false
+	}
+}
